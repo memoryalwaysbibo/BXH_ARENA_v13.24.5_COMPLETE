@@ -1,0 +1,10 @@
+BXH ARENA v13.24.5
+
+Deploy:
+1. Replace GitHub Pages index.html with this index.html.
+2. Firestore Rules do NOT change in this release. Keep v13.24.2 Rules.
+
+Focus:
+- BUG 009: staff cannot create/publish a brand-new official tournament; UI now matches Firestore permissions.
+- BUG 010: permission-denied is shown as ACCESS LIMITED, not LINK ERROR.
+- Cloud diagnostic now performs a safe authenticated Firestore read instead of an unauthorized tournament write probe.
